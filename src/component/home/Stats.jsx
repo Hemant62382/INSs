@@ -2,9 +2,9 @@
 import React from 'react';
 
 const stats = [
-  { label: "Years of Experience", value: "12+" },
-  { label: "Alumni Graduated", value: "16,000+" },
-  { label: "YouTube Subscribers", value: "350K+" },
+  { label: "Years of Experience", value: "27+" },
+  { label: "Placement", value: "10,000+" },
+  { label: "Hiring Partners ", value: "200+" },
   { label: "Support 24x7", value: "Yes" },
 ];
 

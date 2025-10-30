@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const aboutData = {
   vision: "To set the benchmark for IT training by creating a workforce that is not just skilled but future-ready, innovative, and globally competitive.",
   mission: "To transform aspiring IT professionals into industry-ready experts through hands-on training, real-world exposure, and career-driven mentorship.",
-  aboutText: "At Institute of Network Solution, we have been transforming careers in IT since 1998, helping aspiring professionals become Network Engineers, Cloud Engineers, and Security Engineers.",
+  aboutText: "At Institute of Network Solutions, we have been transforming careers in IT since 1998, helping aspiring professionals become Network Engineers, Cloud Engineers, and Security Engineers.",
   certifications: {
     cloud: [
       {
@@ -64,7 +64,24 @@ const aboutData = {
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-orange-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+
+    <div
+        className="absolute -top-35 -left-32 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl"
+        style={{ animation: "blob 8s infinite", animationTimingFunction: "ease-in-out", animationDelay: "0s" }}
+      ></div>
+
+      <div
+        className="absolute top-20 -right-32 w-96 h-96 bg-pink-400/30 rounded-full blur-3xl"
+        style={{ animation: "blob 8s infinite", animationTimingFunction: "ease-in-out", animationDelay: "2s" }}
+      ></div>
+
+      <div
+        className="absolute bottom-10 left-20 w-80 h-80 bg-cyan-400/30 rounded-full blur-3xl"
+        style={{ animation: "blob 8s infinite", animationTimingFunction: "ease-in-out", animationDelay: "4s" }}
+      ></div>
+
+
       {/* Main Container */}
       <div className="max-w-7xl mx-auto">
         {/* Vision & Mission Section */}
@@ -72,10 +89,10 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden"
+          className="mb-16  rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="p-8 md:p-12 lg:p-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-800">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-300">
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-orange-500">Vision & Mission</span>
             </h2>
             
@@ -98,18 +115,18 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden"
+          className="mb-16 rounded-2xl shadow-lg overflow-hidden bg-blue-50/30 border-white/50 border"
         >
           <div className="p-8 md:p-12 lg:p-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-800">
-              About <p className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">Institute of Network Solution</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-gray-300">
+              About <p className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-blue-600">Institute of Network Solutions</p>
             </h2>
             
-            <div className="space-y-6 text-gray-700 max-w-4xl mx-auto">
+            <div className="space-y-6 text-gray-200 max-w-4xl mx-auto">
               <p className="text-lg leading-relaxed">{aboutData.aboutText}</p>
               
-              <div className="bg-blue-50/50 p-6 rounded-lg border-l-4 border-orange-500">
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">Our Training Programs</h3>
+              <div className="bg-gradient-to-br from-blue-300 to-orange-500 p-6 rounded-lg border-l-4 border-orange-500">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">Our Training Programs</h3>
                 <p className="leading-relaxed">
                   Our industry-leading training programs cover A+, Network+, MCSA, RHCSA, CCNA, CCNP, AWS Cloud, MS Azure, Cybersecurity, CEH, and more.
                 </p>
@@ -119,7 +136,7 @@ const About = () => {
                 With internationally certified trainers, state-of-the-art infrastructure, and a hands-on approach, we ensure students gain practical skills and expertise.
               </p>
 
-              <div className="bg-orange-50/50 p-6 rounded-lg border-l-4 border-blue-500">
+              <div className=" bg-gradient-to-br from-orange-300 to-blue-600 p-6 rounded-lg border-l-4 border-blue-500">
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">Beyond Technical Skills</h3>
                 <p className="leading-relaxed">
                   We focus on interview preparation, communication skills, and personality development to make you truly job-ready.
@@ -127,7 +144,7 @@ const About = () => {
               </div>
 
               <p className="text-lg font-medium leading-relaxed text-gray-800">
-                Join Institute of Network Solution and benefit from <span className="text-blue-600">100% job placement</span> with opportunities in leading national and international companies.
+                Join Institute of Network Solution and benefit from <span className="text-orange-500">100% job placement</span> with opportunities in leading national and international companies.
               </p>
             </div>
           </div>
@@ -138,7 +155,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden"
+          className="mb-16 bg-blue-50/30 rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="p-8 md:p-12 lg:p-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-gray-800">
@@ -154,7 +171,7 @@ const About = () => {
                     <motion.div 
                       key={index}
                       whileHover={{ y: -5 }}
-                      className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-md border border-gray-100"
+                      className="bg-gradient-to-br from-blue-400 to-white p-6 rounded-xl shadow-md border border-gray-100"
                     >
                       <h4 className="text-xl font-semibold mb-3 text-blue-700">{cert.title}</h4>
                       <p className="text-gray-700">{cert.description}</p>
@@ -171,7 +188,7 @@ const About = () => {
                     <motion.div 
                       key={index}
                       whileHover={{ y: -5 }}
-                      className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl shadow-md border border-gray-100"
+                      className="bg-gradient-to-br from-orange-400 to-white p-6 rounded-xl shadow-md border border-gray-100"
                     >
                       <h4 className="text-xl font-semibold mb-3 text-orange-700">{cert.title}</h4>
                       <p className="text-gray-700">{cert.description}</p>
@@ -188,7 +205,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-16 bg-white rounded-2xl shadow-lg overflow-hidden"
+          className="mb-16 bg-blue-50/30 rounded-2xl shadow-lg overflow-hidden"
         >
           <div className="p-8 md:p-12 lg:p-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center text-gray-800">
@@ -200,7 +217,7 @@ const About = () => {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.02 }}
-                  className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"
+                  className="bg-white/40 rounded-xl shadow-md overflow-hidden border border-gray-100"
                 >
                   <div className="h-48 bg-gradient-to-r from-blue-100 to-orange-100 flex items-center justify-center">
                     <div className="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-4xl font-bold text-gray-500">
@@ -217,34 +234,7 @@ const About = () => {
             </div>
           </div>
         </motion.section>
-
-        {/* CTA Section */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center"
-        >
-          <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800">
-            Ready to start your IT career journey?
-          </h3>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all"
-            >
-              Contact Us
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all"
-            >
-              View Courses
-            </motion.button>
-          </div>
-        </motion.div> */}
+       
       </div>
     </div>
   );
